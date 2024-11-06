@@ -12,6 +12,6 @@ module.exports.backToFront = function backToFront(str, symbolsCount) {
   return part + str + part;
 };
 
-let originalString = 'hello';
-let numSymbols = 2;
+let originalString = 'abc';
+let numSymbols = 1;
 alert(copyAndPasteSymbols(originalString, numSymbols));
