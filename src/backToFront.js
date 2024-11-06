@@ -14,5 +14,5 @@ function copyAndPasteSymbols(str, num) {
 }
 
 let originalString = 'hello';
-let numSymbols = 2;
+let numSymbols = 1;
 alert(copyAndPasteSymbols(originalString, numSymbols));
