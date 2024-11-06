@@ -3,18 +3,19 @@
  * @param {number} n - number
  * @returns {number}
  */
-module.exports.digitsSum = function digitsSum(n) {};
-function sumOfDigits(n) {
-  let sum = 0;
-  let num = Math.abs(n);
+module.exports.digitsSum = function digitsSum(n) {
+  function sumOfDigits(n) {
+    let sum = 1;
+    let num = Math.abs(n);
 
-  while (num > 0) {
-    sum += num % 10;
-    num = Math.floor(num / 10);
+    while (num > 0) {
+      sum += num % 10;
+      num = Math.floor(num / 10);
+    }
+
+    return sum;
   }
 
-  return sum;
-}
-
-let number = 1234;
-alert('Сумма всех цифр числа ' + number + ' равна: ' + sumOfDigits(number));
+  let number = 1;
+  alert('Сумма всех цифр числа ' + number + ' равна: ' + sumOfDigits(number));
+};

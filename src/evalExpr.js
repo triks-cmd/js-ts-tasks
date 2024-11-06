@@ -3,10 +3,11 @@
  * @param {number} k - number
  * @returns {number}
  */
-module.exports.evalExpr = function evalExpr(k) {};
-function evaluateExpression(k) {
-  return 4 * (2 * k - 1);
-}
+module.exports.evalExpr = function evalExpr(k) {
+  function evaluateExpression(k) {
+    return 4 * (2 * k - 1);
+  }
 
-let k = 5;
-alert(evaluateExpression(k));
+  let k = 1;
+  alert(evaluateExpression(k));
+};

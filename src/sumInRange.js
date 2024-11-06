@@ -4,13 +4,14 @@
  * @param {number|string} end
  * @returns {number}
  */
-module.exports.sumInRange = function sumInRange(start, end) {};
-function sumInRange(start, end) {
-  let sum = 0;
-  for (let i = start; i <= end; i++) {
-    sum += i;
+module.exports.sumInRange = function sumInRange(start, end) {
+  function sumInRange(start, end) {
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+      sum += i;
+    }
+    return sum;
   }
-  return sum;
-}
 
-alert(sumInRange(1, 10));
+  alert(sumInRange(5, 10));
+};

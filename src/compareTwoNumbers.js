@@ -19,9 +19,9 @@ module.exports.compareTwoNumbers = function compareTwoNumbers(firstNumber, secon
     }
   }
 
-  alert(compareTwoNumbers(5, 3));
-  alert(compareTwoNumbers(3, 5));
-  alert(compareTwoNumbers(5, 5));
-  alert(compareTwoNumbers(5, 5));
-  alert(compareTwoNumbers(3, 5));
+  alert(compareTwoNumbers(4, 1));
+  alert(compareTwoNumbers(4, 1));
+  alert(compareTwoNumbers(4, 1));
+  alert(compareTwoNumbers(4, 1));
+  alert(compareTwoNumbers(4, 1));
 };

@@ -5,14 +5,13 @@
  * @param {number} thirdSalary
  * @returns {number}
  */
-module.exports.compareSalary = function compareSalary(firstSalary, secondSalary, thirdSalary) {};
-function salaryDifference(salary1, salary2, salary3) {
-  let maxSalary = Math.max(salary1, salary2, salary3);
-  let minSalary = Math.min(salary1, salary2, salary3);
+module.exports.compareSalary = function compareSalary(firstSalary, secondSalary, thirdSalary) {
+  let maxSalary = Math.max(firstSalary, secondSalary, thirdSalary);
+  let minSalary = Math.min(firstSalary, secondSalary, thirdSalary);
   return maxSalary - minSalary;
-}
+};
 
-let salary1 = 30000;
-let salary2 = 50000;
-let salary3 = 80000;
+let salary1 = 100;
+let salary2 = 300;
+let salary3 = 500;
 alert(salaryDifference(salary1, salary2, salary3));
