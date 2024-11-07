@@ -5,23 +5,11 @@
  * @returns {string}
  */
 module.exports.compareTwoNumbers = function compareTwoNumbers(firstNumber, secondNumber) {
-  function compareTwoNumbers(a, b) {
-    if (a > b) {
-      return '>';
-    } else if (a < b) {
-      return '<';
-    } else if (a >= b) {
-      return '>=';
-    } else if (a <= b) {
-      return '<=';
-    } else {
-      return '=';
-    }
+  if (firstNumber == secondNumber) {
+    return '=';
+  } else if (firstNumber > secondNumber) {
+    return '>';
+  } else if (firstNumber < secondNumber) {
+    return '<';
   }
-
-  alert(compareTwoNumbers(4, 1));
-  alert(compareTwoNumbers(4, 1));
-  alert(compareTwoNumbers(4, 1));
-  alert(compareTwoNumbers(4, 1));
-  alert(compareTwoNumbers(4, 1));
 };

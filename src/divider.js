@@ -6,13 +6,7 @@
  * @returns {number}
  */
 module.exports.divider = function divider(n, k) {
-  function divide(n, k) {
-    let wholePart = Math.floor(n / k);
-    let remainder = n % k;
-    return `${wholePart} ${remainder}`;
-  }
-
-  let n = 4;
-  let k = 2;
-  alert(divide(n, k));
+  let wholePart = Math.floor(n / k);
+  let remainder = n % k;
+  return `${wholePart} ${remainder}`;
 };

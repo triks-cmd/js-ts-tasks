@@ -5,13 +5,10 @@
  * @returns {number}
  */
 module.exports.sumInRange = function sumInRange(start, end) {
-  function sumInRange(start, end) {
-    let sum = 0;
-    for (let i = start; i <= end; i++) {
-      sum += i;
-    }
-    return sum;
+  let sum = 0;
+  let [first, last] = [Math.min(start, end), Math.max(start, end)];
+  for (let i = first; i <= last; i++) {
+    sum += i;
   }
-
-  alert(sumInRange(5, 10));
+  return sum;
 };

@@ -10,8 +10,3 @@ module.exports.compareSalary = function compareSalary(firstSalary, secondSalary,
   let minSalary = Math.min(firstSalary, secondSalary, thirdSalary);
   return maxSalary - minSalary;
 };
-
-let salary1 = 100;
-let salary2 = 300;
-let salary3 = 500;
-alert(salaryDifference(salary1, salary2, salary3));
