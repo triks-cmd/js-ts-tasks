@@ -12,5 +12,5 @@
  * @returns {Object}
  */
 module.exports.partialSum = function partialSum(arr) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return arr.reduce((acc, el, idx) => acc.concat(idx === 0 ? el : acc[idx - 1] + el), []);
 };
