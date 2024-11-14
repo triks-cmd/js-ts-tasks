@@ -4,6 +4,7 @@
  * @returns {Object}
  */
 module.exports.getMaximalSequence = function getMaximalSequence(arr) {
+  //Этот код находит самую длинную последовательность одинаковых элементов в массиве и возвращает её
   let tempSequence = [];
   let maxSequence = [];
 

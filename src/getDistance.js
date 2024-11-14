@@ -10,5 +10,5 @@ module.exports.getDistance = function getDistance(firstPoint, secondPoint) {
   const deltaX = secondPoint.X - firstPoint.X;
   const deltaY = secondPoint.Y - firstPoint.Y;
   const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
-  return distance.toFixed(2);
+  return distance.toFixed(2); //ну здесь математика теорема пифагора
 };

@@ -8,5 +8,8 @@
  * @returns {Array<number>}
  */
 module.exports.replacement = function replacement(arr) {
-  return arr.map(el => Math.min(`${Math.abs(el)}`.length, 4));
+  return arr.map(num => {
+    const length = Math.abs(num).toString().length;
+    return length === 1 ? 1 : length === 2 ? 2 : length === 3 ? 3 : 4;
+  }); //используем метод map чтобы пройдись по элементам данного массива
 };

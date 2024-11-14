@@ -4,12 +4,10 @@
  * @returns {Object}
  */
 module.exports.hundredAfterOdd = function hundredAfterOdd(arr) {
-  let newarr = [];
-  for (let i = 0; i < arr.length; i++) {
-    newarr.push(arr[i]);
-    if (arr[i] % 2 !== 0) {
-      newarr.push(100);
-    }
-  }
-  return newarr;
+  return arr.reduce((newArr, num) => {
+    //метод редусь перебирает каждый элемент массива арр
+    newArr.push(num);
+    if (num % 2 !== 0) newArr.push(100);
+    return newArr;
+  }, []);
 };

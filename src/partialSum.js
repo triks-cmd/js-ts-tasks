@@ -12,5 +12,13 @@
  * @returns {Object}
  */
 module.exports.partialSum = function partialSum(arr) {
-  return arr.reduce((acc, el, idx) => acc.concat(idx === 0 ? el : acc[idx - 1] + el), []);
+  let result = [];
+
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+    result.push(sum);
+  }
+  return result;
 };
+//этот код создает новый массив, где каждый элемент является суммой.
