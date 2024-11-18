@@ -14,3 +14,4 @@ module.exports.removeItems = function removeItems(arr, value) {
   }
   return newarr;
 };
+//JSON.stringify превращает объекты и массивы в строку.Глянул в инете как правильно это делать 
