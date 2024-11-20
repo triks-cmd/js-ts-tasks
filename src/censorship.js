@@ -14,5 +14,14 @@
  * @returns {function}
  */
 module.exports.censorship = function censorship(forbidden) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return function (str) {
+    //возвращает функцию которая принимает строку str
+    forbidden.forEach(word => {
+      //метод форич проходиться по каждому элемента массива
+      const regex = new RegExp(word, 'gi'); //создаёться регулярное выражение для поиска слова в строке str
+      //флаги которые сообщают функции искать совпадение по всей строке глянул в google что делает g и i
+      str = str.replace(regex, '*'.repeat(word.length)); //метод replace заменяет в строке символы длины которых равны длине слова
+    });
+    return str;
+  };
 };

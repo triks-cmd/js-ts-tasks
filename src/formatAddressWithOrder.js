@@ -9,5 +9,13 @@
  * @returns {function}
  */
 module.exports.formatAddressWithOrder = function formatAddressWithOrder(order) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return function (address) {
+    const orderedAddress = []; //создаём пустой массив
+    order.forEach(key => {
+      //перебираем каждый элемент массива ордер
+      orderedAddress.push(address[key]); //кей содержит название обьекта
+      //метод пуш добавляет элементов в конец массива и возвращает новую длину массива
+    });
+    return orderedAddress.join(', ');
+  };
 };

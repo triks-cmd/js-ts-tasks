@@ -4,5 +4,8 @@
  * @returns {function}
  */
 module.exports.formatAddress = function formatAddress() {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return function (address) {
+    const { street, house, apartment, city, postalCode, country } = address; //извлекаем свойства из обьекта адресс
+    return `${street}, ${house}, ${apartment}, ${city}, ${postalCode}, ${country}`;
+  };
 };
