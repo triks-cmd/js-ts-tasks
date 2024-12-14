@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install ./.husky",
-    "test": "npm run test:junit",
+    "test": "mocha",
     "test:local": "mocha test",
     "test:local:debounce": "mocha test -g 'debounce'",
     "test:local:mockApi": "mocha test -g 'mockApi'",
