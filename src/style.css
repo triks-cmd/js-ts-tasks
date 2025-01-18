@@ -1,5 +1,192 @@
-/* your css code here  */
+:root {
+  --panel_width: 360px;
+}
 
 body {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 18.04px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
   background: linear-gradient(45deg, #FFD6C3, #FCB5FF, #BEC6FF);
+}
+
+.C {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.A {
+  display: flex;
+  flex-direction: column;
+}
+
+.B {
+  width: --panel_width;
+  margin: calc(var(--panel_width) / 30);
+  margin-top: 50px;
+  background-color: #121212;
+}
+
+.D {
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.D>div>img {
+  margin: 5px 5px 0 0;
+}
+
+.E {
+  justify-content: space-between;
+}
+
+.I {
+  font-size: larger;
+}
+
+.J {
+  margin-top: 3px;
+  font-size: smaller;
+  font-weight: 200;
+}
+
+.F {
+  margin-right: calc(var(--panel_width) / 15);
+}
+
+.G {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.K {
+  margin-top: 10px;
+  text-align: start;
+}
+
+.M {
+  font-size: small;
+  color: #8E8E8E;
+}
+
+.N {
+  font-size: smaller;
+  color: #D4E0ED;
+}
+
+.O {
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.P {
+  width: calc(var(--panel_width) / 3);
+  padding: calc(var(--panel_width) / 80);
+  margin: calc(var(--panel_width) / 80);
+  border: 1px solid #343434;
+  border-radius: 5px;
+  font-size: smaller;
+  background-color: black;
+}
+
+.Q {
+  color: white;
+  background-color: #4192ef;
+}
+
+.R {
+  width: calc(var(--panel_width) / 15);
+}
+
+.T {
+  width: calc(var(--panel_width) / 4.5);
+}
+
+.U {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  border: 1px solid #505050;
+}
+
+.V {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #7B6FC5;
+}
+
+.W {
+  margin-top: 5px;
+  text-align: center;
+  width: 72px;
+  font-size: small;
+  font-weight: 200;
+  color: #fafafa;
+}
+
+.X {
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #262626;
+}
+
+.Y {
+  width: calc(var(--panel_width) / 2);
+  text-align: center;
+}
+
+.Y>img {
+  width: calc(var(--panel_width) / 15);
+}
+
+.Z {
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+
+.AA {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+
+.AB {
+  width: calc(var(--panel_width) / 3);
+}
+
+.AC {
+  width: 100%;
+  margin: -5px 0 0 -5px;
+  border: 1px solid #121212;
+}
+
+.AD {
+  position: absolute;
+  bottom: 0;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-end-end-radius: 25px;
+  border-end-start-radius: 30px;
+  background-color: #121212;
+}
+
+.AD>div>img {
+  width: calc(var(--panel_width) / 15);
 }
