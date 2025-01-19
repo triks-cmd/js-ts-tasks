@@ -46,5 +46,6 @@ jobs:
       - name: Install dependencies and run tests
         if: steps.check_files.outcome == 'success'
         run: |
+          cd /home/runner/work/js-ts-tasks/js-ts-tasks
           npm install
           npm run test:local
