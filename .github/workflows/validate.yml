@@ -47,4 +47,4 @@ jobs:
         if: steps.check_files.outcome == 'success'
         run: |
           npm install
-          npm run test:local
+          npm run test:locall
