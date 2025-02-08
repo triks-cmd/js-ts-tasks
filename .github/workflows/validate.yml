@@ -34,24 +34,17 @@ jobs:
           
           echo "Changed files: $CHANGED_FILES"
           
-          INVALID_CHANGES=$(echo "$CHANGED_FILES" | grep -v -E '^src/|^\.github/|package.json' || true)
+          INVALID_CHANGES=$(echo "$CHANGED_FILES" | grep -v -E '^src/' || true)
           echo "Invalid changed files: $INVALID_CHANGES"
           
           if [ -n "$INVALID_CHANGES" ]; then
-            echo "Detected invalid changes outside 'src/', '.github/' folders or 'package.json' file."
+            echo "Detected invalid changes outside 'src/' or '.github/' folders."
             echo "Invalid changes: $INVALID_CHANGES"
             exit 1
           fi
 
-      - name: Print working directory
-        run: pwd
-
-      - name: List files and directories
-        run: ls -la
-      
       - name: Install dependencies and run tests
         if: steps.check_files.outcome == 'success'
         run: |
-          cd js-ts-tasks
           npm install
           npm run test:local
