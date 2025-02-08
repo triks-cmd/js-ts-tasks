@@ -31,9 +31,10 @@ jobs:
           fi
           
           CHANGED_FILES=$(git diff --name-only upstream/$CURRENT_BRANCH HEAD)
+          
           echo "Changed files: $CHANGED_FILES"
           
-          INVALID_CHANGES=$(echo "$CHANGED_FILES" | grep -v -E '^(src/|\.github/)' || true)
+          INVALID_CHANGES=$(echo "$CHANGED_FILES" | grep -v -E '^src/' || true)
           echo "Invalid changed files: $INVALID_CHANGES"
           
           if [ -n "$INVALID_CHANGES" ]; then
@@ -42,9 +43,8 @@ jobs:
             exit 1
           fi
 
-          - name: Install dependencies and run tests
-          if: success()
-          run: |
-            npm install
-            npm run test:local
-        
+      - name: Install dependencies and run tests
+        if: steps.check_files.outcome == 'success'
+        run: |
+          npm install
+          npm run test:local
