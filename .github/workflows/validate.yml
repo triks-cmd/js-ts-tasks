@@ -42,8 +42,10 @@ jobs:
             exit 1
           fi
 
-      - name: Install dependencies and run tests
-        if: success()
-        run: |
-          npm install
-          npm run test:local
+          - name: Install dependencies and run tests
+          if: success()
+          working-directory: js-ts-tasks
+          run: |
+            npm install
+            npm run test:local
+        
